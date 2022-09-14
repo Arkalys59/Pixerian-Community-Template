@@ -64,7 +64,7 @@ function createESXPlayer(identifier, playerId, data)
 	end
 
 	if Core.IsPlayerAdmin(playerId) then
-		print("[^5Pixerian - Community^7] [^1INFO^7] ^0 Le joueur ^5%s ^0a reçu les permissions Administrateur via ^5[server.cfg].^7'):format(playerId))
+		print('[^5Pixerian - Community^7] [^1INFO^7] ^0 Le joueur ^5%s ^0a reçu les permissions Administrateur via ^5[server.cfg].^7'):format(playerId)
 		defaultGroup = "admin"
 	else
 		defaultGroup = "user"
@@ -319,7 +319,7 @@ function loadESXPlayer(identifier, playerId, isNew)
 	end
 
 	xPlayer.triggerEvent('esx:registerSuggestions', Core.RegisteredCommands)
-	print("[^5Pixerian - Community^7] [^1INFO^7] Le joueur ^5"%s" ^0se connecte au serveur. ID: ^5%s^7'):format(xPlayer.getName(), playerId))
+	print('[^5Pixerian - Community^7] [^1INFO^7] Le joueur ^5"%s" ^0se connecte au serveur. ID: ^5%s^7'):format(xPlayer.getName(), playerId)
 end
 
 AddEventHandler('chatMessage', function(playerId, author, message)
