@@ -14,6 +14,16 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+-- Listage de la structure de table pixerian_template. addon_account
+CREATE TABLE IF NOT EXISTS `addon_account` (
+  `name` varchar(60) NOT NULL,
+  `label` varchar(100) NOT NULL,
+  `shared` int(11) NOT NULL,
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Listage des données de la table pixerian_template.addon_account : ~0 rows (environ)
+
 -- Listage de la structure de table pixerian_template. addon_account_data
 CREATE TABLE IF NOT EXISTS `addon_account_data` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -203,9 +213,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `last_property` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`identifier`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
-
--- Listage des données de la table pixerian_template.users : ~0 rows (environ)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
 
 -- Listage de la structure de table pixerian_template. user_licenses
 CREATE TABLE IF NOT EXISTS `user_licenses` (
