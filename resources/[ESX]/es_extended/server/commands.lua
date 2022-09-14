@@ -151,7 +151,7 @@ end, true, {help = _U('command_setgroup'), validate = true, arguments = {
 
 ESX.RegisterCommand('save', 'admin', function(xPlayer, args, showError)
 	Core.SavePlayer(args.playerId)
-	print('[^5Pixerian - Community^7] [^1INFO^7] Sauvegarde du joueur [^1%s^0] !'):format(args.playerId.name)
+	print(('[^5Pixerian - Community^7] [^1INFO^7] Sauvegarde du joueur [^1%s^0] !'):format(args.playerId.name))
 end, true, {help = _U('command_save'), validate = true, arguments = {
 	{name = 'playerId', help = _U('commandgeneric_playerid'), type = 'player'}
 }})

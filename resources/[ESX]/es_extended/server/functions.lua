@@ -206,7 +206,7 @@ function Core.SavePlayers(cb)
 			if results then
 				if type(cb) == 'function' then cb() 
 				else 
-					print('[^5Pixerian - Community^7] [^1INFO^7] Sauvegarde [^1%s^0] %s over %s ms'):format(count, count > 1 and 'players' or 'player', (os.time() - time) / 1000000) end
+					print(('[^5Pixerian - Community^7] [^1INFO^7] Sauvegarde [^1%s^0] %s over %s ms'):format(count, count > 1 and 'players' or 'player', (os.time() - time) / 1000000)) end
 			end
 		end)
 	end
